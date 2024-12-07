@@ -1,0 +1,32 @@
+连线：
+st7735s                    stm32f103c8t6
+
+SCL				GPIOA_Pin_0				
+SDA				GPIOA_Pin_1				
+RST				GPIOA_Pin_2				
+DC				GPIOA_Pin_3				
+CS				GPIOA_Pin_4
+BLK				GPIOA_Pin_5
+
+
+key                           stm32f103c8t6 
+
+KEY_W                     GPIOA_Pin_8 
+KEY_A			GPIOA_Pin_9
+KEY_S			GPIOA_Pin_10
+KEY_D			GPIOA_Pin_11
+KEY_X 			GPIOA_Pin_12
+KEY_Y 			GPIOA_Pin_15
+
+
+关卡文件在sokoban.h中
+LENVEL_TOTAL      //关卡数量
+u8 MAP[][]             //地图信息
+u8 HEIGHT[]          //关卡高度
+u8 LENGTH[]         //关卡宽度
+人物为10*10的像素小格，可更改（通过取模软件获取像素信息）
+悔棋最多悔100步（可在stack.h中修改STACK_MAX更改）
+
+LCD字符显示可参考：
+【TFT-LCD显示屏（1.8寸 STM32）】 https://www.bilibili.com/video/BV1SXtFeyEGL/?share_source=copy_web&vd_source=2b6aedce525e0c095763bf03ab21650f
+
